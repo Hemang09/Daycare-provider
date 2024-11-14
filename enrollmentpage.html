@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrollment</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            background-color: whitesmoke;
+            margin: 0;
+            background-image: url(Stuff/anima.jpg);
+            backdrop-filter: blur(3px);
+            background-size: cover;
+            background-position: center;
+        }
+
+        header {
+        background-color: #A0C49D;
+        color: white;
+        text-align: center;
+        padding: 1.5rem;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        border: 2px solid #fff;
+        border-radius: 10px;
+        
+        }
+        
+        h1 {
+        font-size: 60px;
+        font-weight: bold;
+        }
+
+        label {
+        font-size: 20px;
+        }
+
+        section {
+            max-width: 1300px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #A0C49D;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #86A789;
+        }
+
+        #but {
+            background-color: #A0C49D;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+    background-color: #A0C49D;
+    padding: 25px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    font-size: 20px;
+
+}
+
+nav li {
+    display: inline;
+    margin: 0 1rem;
+    padding: 4px;
+}
+
+
+.nav-item :hover{
+    background-color: white;
+    color: #A0C49D;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Enrollment</h1>
+    </header>
+    <b>
+        <nav class="navbar">
+                <ul class="nav">
+                    <li class="nav-item active">
+                        <a href="homepage.html">Home</a>
+                      </li>
+                    <li class="nav-item active">
+                    <a href="aboutus.html">About Us</a>
+                   
+                  <li class="nav-item">
+                    <a href="programs.html">Programs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="enrollmentpage.html">Enrollment</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="contact.html">Contact</a>
+                  </li>
+                </ul>
+        </nav>
+    </b>
+    <section>
+        <form method="post" action="/enrollment">
+            <label for="childName">Child's Name:</label>
+            <input type="text" id="childName" name="childName" required placeholder="Enter kids Name">
+
+            <label for="parentName">Parent/Guardian Name:</label>
+            <input type="text" id="parentName" name="parentName" required placeholder="Enter parents Name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="abc@gmail.com">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required placeholder="1234567890">
+
+            <label for="age">Child's Age:</label>
+            <input type="number" id="age" name="age" required placeholder="5">
+
+            <label for="program">Select Program:</label>
+            <select id="program" name="program" required>
+                <option value="infant">Infant Care</option>
+                <option value="toddler">Toddler Exploration</option>
+                <option value="preschool">Preschool Adventures</option>
+
+            </select>
+
+            <label for="Slot">Date</label >
+            <input type="date" name="datetime" id="date">
+            
+            <label for="Time">Time Slot</label>
+            <select id="time" name="slot" required>
+                <option value="1">  8 AM - 11 AM </option>
+                <option value="2"> 11 AM - 2 PM </option>
+                <option value="3">  2 PM - 5 PM </option>
+                <option value="4">  5 PM - 8 PM </option>
+                <option value="5">  8 PM - 11 PM </option>
+            
+            </select>
+            
+            <label for="submit"></label>
+            <a href="Thankyou.html"><button type="submit">Submit Enrollment</button></a>
+        </form>
+    </section>
+</body>
+</html>

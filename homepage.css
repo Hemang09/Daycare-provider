@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    background-image: url(Stuff/anima.jpg);
+    backdrop-filter: blur(3px);
+    background-size: cover;
+    background-position: center;
+    
+    background-color: whitesmoke;
+}
+
+
+header {
+    background-color: #A0C49D;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+    background-color: #A0C49D;
+    padding: 25px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    font-size: 20px;
+
+}
+
+nav li {
+    display: inline;
+    margin: 0 1rem;
+    padding: 4px;
+}
+
+
+.nav-item :hover{
+    background-color: white;
+    color: #A0C49D;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+
+section {
+    max-width: 1300px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+section p {
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+h2 {
+    color: #aad683;
+    font-size: 30px;
+}
+
+p {
+    font-size: 20px;
+ }
+ 
+@media screen and (max-width: 770px) {
+    nav ul {
+        flex-direction: column;
+    }
+ }
